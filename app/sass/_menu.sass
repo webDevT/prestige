@@ -1,0 +1,80 @@
+@import "vars"
+@import "fonts"
+
+//start menu style
+.header__menu-link
+	color: #fff
+	font-weight: 500
+	cursor: pointer
+.header__menu-list
+	display: flex
+	.header__menu-item 
+		margin-right: 2.273vw
+	.header__menu-item:last-child 
+		margin-left: 2vw
+		a 
+			padding: 1.045vw 1.500vw
+			background: $gold
+			text-transform: uppercase
+		a:hover 
+			color: #fff
+.header__menu-link:hover 
+	color: #fff
+.header__menu
+	padding-top: 2.2vw
+.header__menu-down 
+	margin-left: 0.591vw
+	cursor: pointer
+	img 
+		width: 0.682vw
+.header__menu-item--sub
+	position: relative
+.header__menu-item--sub
+
+.header__menu-item--sub-wrap
+	position: absolute
+	transform: translateY(100%)
+	bottom: 0vw
+	display: none
+.header__sub-menu
+	background: $gold	
+	padding-left: 1vw
+	padding-right: 1vw
+	width: auto
+	margin-top: 1.2vw
+	
+	li 
+		padding: 1vw 0
+		border-bottom: 1px solid #ceb94a
+		padding-left: 1.2vw
+		padding-right: 1.2vw
+		a 
+			color: #fff
+	li:last-child 
+		border-bottom: none
+
+.menu-btn-row
+	width: 10vw 
+	height: 1vw 
+	margin-bottom: 2vw
+	background: #fff
+	transition: all .5s
+.menu-btn-row:last-child 
+	margin-bottom: 0
+.menu-btn
+	cursor: pointer
+	display: none
+.menu-btn.active 
+	.menu-btn-row:last-child
+		display: none
+	.menu-btn-row:first-child
+		transform: rotate(45deg)
+		margin-bottom: 0
+		position: relative 
+		top: 1vw
+	.menu-btn-row:nth-child(2)
+		transform: rotate(-45deg)
+//end menu style
+
+
+@import "media"
