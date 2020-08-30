@@ -2,8 +2,8 @@
 document.getElementById('menu-btn').onclick = function() {
   document.getElementById('menu').classList.toggle('active'); 
    document.getElementById('menu-btn').classList.toggle('active');
-   document.getElementById('header').classList.toggle('active'); 
-   document.getElementById('body').classList.toggle('active');
+   // document.getElementById('header').classList.toggle('active'); 
+   //document.getElementById('body').classList.toggle('active');
 }
 document.getElementById('header__menu-item--sub').onclick = function() {
    document.getElementById('header__menu-item--sub-wrap').classList.toggle('active');

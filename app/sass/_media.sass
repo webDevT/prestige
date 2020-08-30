@@ -35,39 +35,43 @@
 		.container-fluid 
 			width: 90vw
 	.header__sub-title 
-		padding-bottom: 20vw
+		padding-bottom: 15vw
 	//start menu style
 	.header__menu 
-		display: none
-	.header__logo
-		z-index: 999
-	.header__logo img
-		width: 30vw
-	.menu-btn
-		display: block
-		z-index: 999
-	.header__menu.active
+		transform: translateX(100vw)
+		position: fixed
+		transition: all 0.5s
 		display: block
 		background: #1f3e62
-		width: 100vw 
+		width: 70vw 
 		position: fixed
-		left: 0
+		right: 0
 		top: 0
 		min-height: 100vh
 		height: 100vh 
 		overflow-y: scroll
 		z-index: 998
 		padding-top: 40vw
+	.header__logo
+		//z-index: 999
+	.header__logo img
+		width: 30vw
+	.menu-btn
+		display: block
+		z-index: 999
+	.header__menu.active
+		
+		transform: translateX(0vw)
 		.header__menu-item
 			margin-bottom: 5vw
 			margin-right: 0
 		.header__menu-link
-			font-size: 6vw
+			font-size: 4.5vw
 		.header__menu-item:last-child
 			margin-left: 0
-			margin-top: 10vw
+			margin-top: 5vw
 			a
-				padding: 5vw 20vw
+				padding: 5vw 10vw
 
 
 		.header__menu-list
@@ -81,7 +85,7 @@
 	.header__sub-title
 		max-width: 100%
 	.main-title 
-		margin-top: 22vw
+		margin-top: 15vw
 	.header__menu-down
 		position: absolute
 		img
@@ -99,14 +103,21 @@
 		background: transparent
 
 		a 
-			font-size: 6vw
+			font-size: 4.5vw
 		li 
 			text-align: center
+	.menu-btn.active 
+		//transform: translateX(-43vw)
+		//transition: all 0.5s
+		//transition-delay: 0.05s
+
 	.header__sub-menu li,
 	.header__sub-menu li:last-child
 		border-bottom: 1px solid $gold
 		padding-left: 3vw 
 		padding-right: 3vw
+		padding-top: 2vw
+		padding-bottom: 2vw
 	.header__menu-item--sub:hover .header__menu-item--sub-wrap
 		
 	.header__menu-item--sub-wrap.active 
@@ -117,12 +128,15 @@
 		top: -1vw
 	//start search 
 	.search-tabs__nav .tabs__link
-		font-size: 3.4vw
+		font-size: 4.9vw
+		line-height: 1.2
+		padding-bottom: 1.3vw
+
 	.search-form
 		background: transparent
 		padding-top: 0 
 		padding-bottom: 0
-		margin-top: 3vw
+		margin-top: 7vw
 
 		.search-select,
 		.search-btn 
@@ -136,17 +150,26 @@
 		form 
 			flex-wrap: wrap
 			display: flex
+			flex-direction: column
 		.form-group
-			width: 25%
+			width: 100%
 			background: #fff
+			margin-bottom: 3vw
+			border-radius: 10vw
+			select 
+				font-size: 4.2vw
+				padding-left: 5vw
+				height: 13vw
 		.form-group:last-child
-			width: 50%
+			width: 100%
 			background: transparent
 		.search-btn
-			font-size: 4vw
-			margin-top: 2vw
+			font-size: 4.8vw
+			margin-top: 0vw
 			border-top-left-radius: 10vw
 			border-bottom-left-radius: 10vw
+			width: 100%
+			height: 13vw
 
 		.form-group:first-child
 			border-top-left-radius: 10vw
@@ -156,8 +179,9 @@
 			border-top-right-radius: 10vw
 			border-bottom-right-radius: 10vw
 	.search-tabs__content
+		padding-bottom: 5vw
 		.container-fluid 
-			width: 100%
+			width: 90%
 			padding-left: 1vw
 			padding-right: 1vw
 	//end search
