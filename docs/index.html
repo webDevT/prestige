@@ -47,7 +47,7 @@
 								<a class="header__menu-link" href="index.html">HOME</a>
 							</li>
 							<li class="header__menu-item">
-								<a class="header__menu-link" href="boat.html">BOAT HIRE</a>
+								<a class="header__menu-link" href="archive.html">BOAT HIRE</a>
 							</li>
 							<li class="header__menu-item header__menu-item--sub" id="header__menu-item--sub">
 								
@@ -1140,6 +1140,40 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
  <script src="path/to/swiper.min.js"></script>
+ <script>
+ 	/////------------staer swiper init--------
+ let swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+       navigation: {
+    nextEl: '.swiper-btn-next',
+    prevEl: '.swiper-btn-prev',
+  },
+     
+      breakpoints: {
+    // when window width is >= 320px
+    0: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 1,
+    
+    },
+    // when window width is >= 640px
+    992: {
+      slidesPerView: 3,
+   
+    }
+  }
+    });
+ ////// ------end swiper init-----
+ </script>
+
+ <script>
+ 	
+ </script>
 	<script src="js/main.js"></script>
+	<script src="js/tab.js"></script>
 </body>
 </html>
