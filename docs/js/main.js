@@ -18,15 +18,23 @@ document.getElementById('header__menu-item--sub').onclick = function() {
 document.getElementById('play-btn2').onclick = function() {
    document.getElementById('video-popup').classList.add('active');
 }
-document.getElementById('close').onclick = function() {
-   document.getElementById('video-popup').classList.remove('active');
-}
+
 
 document.getElementById('play-btn1').onclick = function() {
    document.getElementById('video-popup').classList.add('active');
+   
+
 }
 document.getElementById('close').onclick = function() {
    document.getElementById('video-popup').classList.remove('active');
+var myFrame = document.getElementById('iframe');
+myFrame.setAttribute('src', myFrame.getAttribute('src').replace(/blank/, 'bank'));
+
+   
 }
+
+
+
+
  //end video
 

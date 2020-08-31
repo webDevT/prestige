@@ -11,6 +11,719 @@
 @media only screen and (max-width : 991px)
 	/**/
 	body 
+		font-size: 2.2vw
+	h1,
+	.main-title 
+		font-size: 5vw
+	h2 
+		font-size: 3.5vw
+	h3 
+		font-size: 2.5vw
+	h4 
+		font-size: 2.5vw
+	.container-fluid
+		width: 98vw
+	.sub-title
+		font-size: 2.1vw
+	.search-tabs__content
+		padding-bottom: 10vw
+	.header-bread-crumbs
+		font-size: 2vw
+
+
+	.header__top
+		.container-fluid 
+			width: 90vw
+	.header__sub-title 
+		padding-bottom: 5vw
+	//start menu style
+	.header__menu 
+		transform: translateX(100vw)
+		position: fixed
+		transition: all 0.5s
+		display: block
+		background: #1f3e62
+		width: 70vw 
+		position: fixed
+		right: 0
+		top: 0
+		min-height: 100vh
+		height: 100vh 
+		overflow-y: scroll
+		z-index: 998
+		padding-top: 20vw
+	.header__logo
+		//z-index: 999
+	.header__logo img
+		width: 13vw
+	.menu-btn
+		display: block
+		z-index: 999
+		position: relative
+		top: 3vw
+	.menu-btn-row
+		width: 4vw
+		height: 0.35vw
+		margin-bottom: 0.75vw
+	.menu-btn.active .menu-btn-row:first-child
+		top: 0.3vw
+
+
+	.header__menu.active
+		
+		transform: translateX(0vw)
+		.header__menu-item
+			margin-bottom: 2.5vw
+			margin-right: 0
+		.header__menu-link
+			font-size: 2.5vw
+		.header__menu-item:last-child
+			margin-left: 0
+			margin-top: 2.5vw
+			a
+				padding: 2.5vw 5vw
+
+
+		.header__menu-list
+			flex-direction: column
+			align-items: center
+	.header.active 
+		height: 100vh 
+		overflow: auto
+		.header__top
+			display: none
+	.header__sub-title
+		max-width: 100%
+	.main-title 
+		margin-top: 5vw
+	.header__menu-down
+		position: absolute
+		img
+			width: 2vw
+			position: relative 
+			top: -0.5vw 
+			margin-left: 1.5vw
+	.header__menu-item--sub
+		.header__menu-link
+			position: relative
+	.header__menu-item--sub-wrap
+		position: static
+		transform: translateY(0)
+	.header__sub-menu
+		background: transparent
+
+		a 
+			font-size: 3vw
+		li 
+			text-align: center
+	.menu-btn.active 
+		//transform: translateX(-43vw)
+		//transition: all 0.5s
+		//transition-delay: 0.05s
+
+	.header__sub-menu li,
+	.header__sub-menu li:last-child
+		border-bottom: 1px solid $gold
+		padding-left: 1.5vw 
+		padding-right: 1.5vw
+		padding-top: 1vw
+		padding-bottom: 1vw
+	.header__menu-item--sub:hover .header__menu-item--sub-wrap
+		
+	.header__menu-item--sub-wrap.active 
+		display: block
+	.header__menu-down.active
+		transform: rotate(-180deg)
+		right: -10vw
+		top: -1vw
+	//start search 
+	.search-tabs__nav .tabs__link
+		font-size: 2vw
+		line-height: 1.2
+		padding-bottom: 1vw
+
+	.search-form
+		background: transparent
+		padding-top: 0 
+		padding-bottom: 0
+		margin-top: 2vw
+
+
+		.search-select,
+		.search-btn 
+			width: 100%
+			height: 10vw
+		.search-select
+			width: 96%
+			font-size: 1.5vw
+			padding-left: 0.75vw
+			background: transparent
+		form 
+			flex-wrap: wrap
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+		.form-group
+			width: 49%
+			background: #fff
+			margin-bottom: 1.5vw
+			border-radius: 10vw
+			select 
+				font-size: 2.1vw
+				padding-left: 5vw
+				height: 5vw
+		.form-group:last-child
+			width: 100%
+			background: transparent
+		.search-btn
+			font-size: 2.75vw
+			margin-top: 0vw
+			border-top-left-radius: 10vw
+			border-bottom-left-radius: 10vw
+			width: 100%
+			height: 6vw
+
+		.form-group:first-child
+			border-top-left-radius: 10vw
+			border-bottom-left-radius: 10vw
+		.form-group:nth-child(4),
+		.form-group:nth-child(4) .search-select
+			border-top-right-radius: 10vw
+			border-bottom-right-radius: 10vw
+	.search-tabs__content
+		padding-bottom: 5vw
+		.container-fluid 
+			width: 90%
+			padding-left: 1vw
+			padding-right: 1vw
+	//end search
+
+	//start intro style 
+	.intro 
+		.col-lg-5
+			display: flex 
+			align-items: center
+		// 	width: 50%
+		// 	margin: 0 auto
+		// 	display: block
+	.intro__content
+		padding-top: 5vw
+		padding-left: 0
+	.intro__item
+		margin-bottom: 1.5vw
+		img
+			width: 2.5vw
+			height: 2.5vw
+	.intro__list
+		margin-top: 2.5vw
+	//end intro section
+
+	//start popular section 
+	.popular__item-img-wrapper
+		height: 25vw
+	.popular__item-location
+		font-size: 1.9vw
+		margin-bottom: 1vw
+		img 
+			width: 1.8vw
+			margin-right: 2vw
+	.popular__item-img-wrapper
+		margin-bottom: 2vw
+	.popular__item-footer
+		margin-top: 1vw
+		padding-top: 1vw
+	.popular__item-footer-text
+		font-size: 1.8vw
+	.popular__item-price
+		font-size: 2.5vw
+	.popular__item-footer-right
+		font-size: 1.9vw
+	.popular__item-review-val
+		margin-left: 1.5vw
+	.stars-wrapper img
+		width: 2vw
+	.popular__item
+		padding: 1.5vw
+		margin-top: 2.5vw
+		height: auto
+	.see-all-events__title
+		font-size: 4.5vw
+		line-height: 1.5
+	.read-more
+		font-size: 2vw
+		img 
+			width: 2vw
+			margin-left: 1.25vw
+	.see-all-events__title
+		padding-top: 1.5vw 
+		padding-bottom: 1.5vw
+	.read-more--center
+		padding-bottom: 2vw
+	.see-all-events 
+		min-height: 38vw
+	
+
+		.read-more 
+			bottom: 1.25vw
+	.tips 
+		padding-bottom: 8vw
+		padding-top: 8vw
+	//end popular section
+
+	//start clients 
+	.clients
+		padding-top: 5vw
+	.clients__title
+		font-size: 2vw
+	.clients__logo
+		img 
+			max-width: 50%
+	//end clients
+
+	//start destination
+	
+
+
+
+	.destination__item
+		margin-top: 5vw 
+		margin-bottom: 5vw
+		h4 
+			margin-top: 4.5vw
+			margin-bottom: 0
+	.destination h2 br 
+		display: none
+	.destination__item-img-wrapper
+		height: 40vw
+	.destination__btn
+		height: 5vw 
+		width: 5vw
+		img 
+			width: 2.25vw
+	//end destination
+
+	//start review 
+	.slide-text
+		font-size: 1.9vw
+	.review__author
+		font-size: 1.9vw
+	.review__company
+		font-size: 1.8vw
+	.slide__footer-left img
+		width: 5vw
+	.swiper-slide .wrapper,
+	.review__item .wrapper
+		padding: 3vw
+	.review .container-fluid
+		width: 85%
+	.swiper-btn-prev,
+	.swiper-btn-next
+		height: 4.25vw 
+		width: 4.25vw
+		img 
+			width: 1vw
+	.swiper-slide .wrapper,
+	.review__item .wrapper
+		border-radius: 2.5vw
+	.review--blue h2 
+		margin-bottom: 10vw
+	.review__item
+		margin-bottom: 5vw
+
+	.swiper-btn-prev
+		transform: translateY(-50%) translateX(-75%)
+	.swiper-btn-next
+		transform: translateY(-50%) translateX(75%)
+	.button
+		padding: 2vw 5vw
+		font-size: 2.5vw
+		img 
+			width: 2vw
+			margin-left: 1vw
+	//virtual tour 
+	.virtual-tour__item
+		width: 49%
+		margin-right: 0
+		margin-top: 5vw
+	.virtual-tour__items
+		justify-content: space-between
+		
+	.virtual-tour__items
+		padding-top: 0vw
+	.play-btn
+		width: 5vw 
+		height: 5vw
+	.video-popup
+		iframe 
+			width: 85vw
+			height: 50vw
+	.video-popup__content
+		width: 85vw
+		height: 50vw
+		.video-popup__close
+			font-size: 7vw
+	.seo-section
+		padding-top: 5vw 
+		padding-bottom: 0vw
+		p 
+			max-width: 100%
+			margin-bottom: 6vw
+	//virtual tour
+	.action 
+		flex-wrap: wrap
+	.action__left,
+	.action__right 
+		width: 100%
+		padding-left: 0
+		text-align: center
+		justify-content: center
+		font-size: 2.5vw
+		height: 13vw
+
+	.action__right img
+		left: 50%
+		top: 0
+		width: 5vw
+
+	.footer__logo-menu
+		flex-direction: column
+		.logo
+			order: 1
+			img 
+				width: 15vw
+		.footer__menu
+			order: 2
+	.footer__menu
+		ul 
+			flex-direction: column
+			text-align: center
+			margin-top: 5vw
+		li
+			margin-right: 1vw 
+			margin-left: 1vw
+			margin-bottom: 2.5vw
+			a 
+				font-size: 2vw
+	.footer__content 
+		p 
+			max-width: 100%
+			text-align: center
+	.footer__bottom .container-fluid
+		flex-direction: column
+	.footer__bottom-social
+		margin-bottom: 2vw
+		order: 1
+	.footer__bottom .container-fluid
+		a 
+			display: block
+			margin: 0 1vw
+		img 
+			width: 5vw
+	.footer__bottom-right
+		order: 2
+		font-size: 1.9vw
+		display: flex 
+		flex-wrap: wrap
+		justify-content: center
+		text-align: center
+
+		a 
+			text-align: center
+
+		span
+			display: none
+		.slash
+			display: block
+	.footer__bottom .container-fluid a 
+		margin: 0 1vw
+		
+	.copy
+		width: 100%
+		order: 2
+		margin-right: 0
+		margin-top: 3vw
+	.footer__bottom
+		padding-top: 4vw 
+		padding-bottom: 4vw
+	.footer__bottom .container-fluid .footer__bottom-social a
+		margin: 0 2vw
+	.footer__bottom .container-fluid .footer__bottom-social
+		margin-bottom: 4vw
+	//start archive style
+	.header__content--page
+
+		h1 
+			padding-top: 10vw
+			padding-bottom: 20vw
+
+
+	//end archive syle
+
+	//start page-pagination 
+	.page-pagination 
+		a 
+			width: 5vw 
+			height: 5vw
+			margin-right: 1vw
+	//end page-pagination 
+
+	//start filter 
+	.filter__title 
+		font-size: 2.5vw
+	.filter-item__title
+		font-size: 2.4vw
+		margin-bottom: 2vw
+	.filter__item
+		padding: 3.5vw 3.5vw
+	.filter 
+		font-size: 2vw
+		.button 
+			margin-top: 5vw
+		select 
+			padding: 1.4vw 0
+		.checkbox-wrapper
+			margin-bottom: 1.5vw
+	.checkbox-wrapper .checkbox
+		width: 2vw
+		height: 2vw
+		margin-right: 3vw
+	.filter__content
+		height: 0
+		transition: all 1s
+		overflow: hidden
+		
+	.filter__item--header
+		display: flex 
+		align-items: center
+		justify-content: space-between
+		cursor: pointer
+		padding-top: 2vw
+		padding-bottom: 2.5vw
+		img 
+			width: 2.5vw
+	.filter__content.active 
+		height: auto
+	.filter__item--header img
+		display: block
+	.popular__item__label
+		font-size: 1.9vw
+		padding: 1vw 2.5vw
+		img 
+			width: 2.5vw
+			margin-right: 1vw
+	//start bread crumbs 
+	.bread-crumbs a
+		padding: 0 2vw
+	//side bar 
+	.sidebar__title
+		font-size: 2.4vw
+	.sidebar__row
+		font-size: 2vw
+	.sidebar__row
+		padding: 1.5vw 1.5vw
+	.sidebar__icon
+		width: 2.5vw
+		margin-right: 2.5vw
+	.sidebar__icon-wrapper
+		margin-right: 2.5vw
+		img
+			width: 3.5vw
+	.sidebar__item
+		padding: 2.5vw 1.5vw
+	.sidebar__header
+		padding: 2.5vw
+	.sidebar .button--transparent
+		margin-top: 5vw
+	.button-prev,
+	.button-next
+		width: 2vw 
+		height: 2vw
+
+	.button-prev
+		margin-right: 2vw
+
+	.boat__header
+		flex-direction: column
+		align-items: flex-start
+	.button--radius
+		padding: 1vw 2.4vw
+		a
+			display: flex 
+			align-items: center
+			font-size: 2vw
+			img 
+				width: 2.5vw
+				margin-right: 1.5vw
+	.boat__header .popular__item-location
+		font-size: 2vw
+	.boat__header .popular__item-location img
+		width: 1.5vw
+	.boat__content
+		padding: 3vw 3vw
+		p 
+			margin-bottom: 2vw
+	.boat__header
+		padding-bottom: 2.5vw
+	.boat-tab-content
+		max-width: 100%
+	.boat-tabs__content-item img
+		width: 2.5vw
+		margin-right: 1.5vw
+	.boat-tabs__content-item
+		margin-bottom: 2vw
+	.boat-tabs__link
+		font-size: 2.3vw
+		padding: 1vw 0
+	.boat__tabs-wrapper 
+		padding-top: 2.5vw
+		padding-left: 1vw 
+		padding-right: 1vw
+	.cruise__title
+		font-size: 3vw
+	.cruise-text
+		font-size: 2.5vw
+	.cruise-list
+		font-size: 1.9vw
+		li 
+			margin-bottom: 1vw
+	.cruise__item--list
+		flex-direction: column
+	.cruise__item-col
+		width: 100%
+	.search-input
+		input
+			height: 5vw
+			background-size: 2vw
+			background-position: right 2vw center
+	.blog__sidebar-title
+		font-size: 2.4vw
+	.blog-sidebar__item
+		font-size: 2vw
+		li 
+			padding-left: 2vw
+			margin-bottom: 2vw
+		li:before 
+			height: 0.75vw 
+			width: 0.75vw
+	.blog-sidebar__item
+		padding-left: 3vw
+		padding-right: 3vw
+	.sidebar-baner__title
+		font-size: 6vw
+		margin-bottom: 2vw
+	.sidebar-baner
+		padding-bottom: 5vw
+		padding-top: 5vw
+	.blog__item
+		padding: 2.5vw 1.5vw
+	.page-pagination--center
+		padding-bottom: 5vw
+		padding-top: 2.5vw
+	h1 
+		br 
+			display: none
+	.single-post__footer
+		flex-direction: column
+		.single-post__social
+			padding-top: 2vw
+		img 
+			width: 5vw
+		a 
+			margin: 0 3vw
+	.review-page__name
+		font-size: 3.25vw
+	.review-page__photo img
+		width: 7.5vw
+	.review-page__header .stars-wrapper img
+		width: 2vw
+	.review-page__item
+		margin-bottom: 2.5vw
+	.sidebar-review__title
+		font-size: 3.5vw
+		margin-bottom: 1.5vw
+		br 
+			display: none
+	.sidebar-review__item
+		input 
+			height: 5vw
+			margin-bottom: 2.5vw
+		.button 
+			margin-top: 2.5vw
+	.sidebar-review__item .rate-wrapper
+		padding-top: 1.5vw
+		padding-bottom: 1.5vw
+		margin-bottom: 2.5vw
+		img
+			width: 2.5vw
+	.sidebar-review__item
+		padding-top: 10vw
+		padding-bottom: 10vw
+	.contact-form
+		.container-fluid 
+			max-width: 100%
+		textarea 
+			height: 15vw
+	.conact__form-row
+		flex-direction: column
+		input 
+			width: 100%
+			height: 6vw
+	.contact-form
+		padding-top: 10vw 
+		padding-bottom: 10vw
+	.contact-information-content
+		width: 90%
+		margin: 0 auto
+		padding: 5vw 2.5vw
+	.contact-information
+		padding-left: 1%
+		padding-right: 1%
+
+	.conact-info-item
+		font-size: 2vw
+		align-items: center
+		margin-bottom: 4vw
+		br 
+			display: none
+		img 
+			width: 2.5vw
+			margin-right: 2vw
+	.contact-information
+		padding-top: 5vw
+		padding-bottom: 5vw
+
+
+
+
+
+
+
+
+
+			
+
+
+
+@media (orientation: landscape)
+	.header__logo
+		z-index: 997
+	.menu-btn.active
+		position: relative 
+		top: -4vw
+	.header__menu.active
+		padding-top: 9vw
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+	/**/
+	body 
 		font-size: 3.8vw
 	h1,
 	.main-title 
@@ -663,38 +1376,28 @@
 	.contact-information
 		padding-top: 10vw
 		padding-bottom: 10vw
+	.menu-btn-row
+		width: 8vw 
+		height: 0.7vw 
+		margin-bottom: 1.5vw
+		background: #fff
+		transition: all .5s
+	.menu-btn-row:last-child 
+		margin-bottom: 0
+	.menu-btn
+		cursor: pointer
+		
+	.menu-btn.active 
+		.menu-btn-row:last-child
+			display: none
+		.menu-btn-row:first-child
+			transform: rotate(45deg)
+			margin-bottom: 0
+			position: relative 
+			top: 0.5vw
+		.menu-btn-row:nth-child(2)
+			transform: rotate(-45deg)
 
-
-
-
-
-
-
-
-
-			
-
-
-
-@media (orientation: landscape)
-	.header__logo
-		z-index: 997
-	.menu-btn.active
-		position: relative 
-		top: -4vw
-	.header__menu.active
-		padding-top: 9vw
-
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 576px)
-	/**/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
